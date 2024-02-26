@@ -1,4 +1,5 @@
 
+
 :root{
     --black-main-color: rgba(0, 0, 0, 1);
     --blue-main-color: rgba(33, 150, 243, 1);
@@ -23,16 +24,18 @@
 .header{
     background-color: var(--white-main-color);
     padding: 24px 0px;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .header-wrap{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 94px;
+    
     
 }
 
-    /* - */
+  
 
     .logo{
     font-family: Raleway;
@@ -52,7 +55,7 @@
 
     }
 
-    /* - */
+
 
 
 body{
@@ -65,7 +68,19 @@ body{
     gap: 50px;
     align-items: center;
 
-    padding-right: 344px;
+   
+}
+
+.nav-list-link::after{
+    
+}
+
+.nav-list-link:hover{
+    color: rgba(33, 150, 243, 1);
+}
+
+.nav-list-link:hover{
+    color: rgba(33, 150, 243, 1);
 }
 
 .nav-list-link{
@@ -104,6 +119,7 @@ color: #212121;
     display: flex;
     gap: 50px;
     align-items: center;
+    margin-left: auto;
 }
 
 .contacts-list-item{
@@ -121,12 +137,12 @@ color: #212121;
 
 
     padding: 200px 0px;
-    margin: 0 auto;
 
     background-color: var(--bg-color);
     background-image:  linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) ,url("./img/bg-hero-img.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     
 }
 
@@ -158,6 +174,10 @@ color: #212121;
     background-color: var(--blue-main-color);
 
 }
+
+
+
+
 
 .section-features{
 
@@ -399,8 +419,7 @@ color: #212121;
     background-color: var(--bg-color);
 
     padding: 60px 0px;
-    padding-left: 215px;
-    padding-right: 1154px;
+
 
 }
 
@@ -480,6 +499,9 @@ color: #212121;
     display: flex;
     width: 200px;
     height: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     border-radius: 4px;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(33, 150, 243, 1);

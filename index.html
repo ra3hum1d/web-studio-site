@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./web-studio.js">
   </head>
 
   <body>
@@ -26,16 +27,25 @@
           <nav class="nav">
 
               <ul class="nav-list">
-                <li class="nav-list-item"><a href="" class="nav-list-link">Студія</a></li>
-                <li class="nav-list-item"><a href="./portfolio.html" class="nav-list-link">Портфоліо</a></li>
-                <li class="nav-list-item"><a href="" class="nav-list-link">Контакти</a></li>
+                <li class="nav-list-item"><a href="" class="nav-list-link">Студія</a>
+                  <div class="box">
+                    <div class="overlay"></div>
+                  </div></li>
+                <li class="nav-list-item"><a href="./portfolio.html" class="nav-list-link">Портфоліо</a>
+                  <div class="box">
+                    <div class="overlay"></div>
+                  </div></li>
+                <li class="nav-list-item"><a href="" class="nav-list-link">Контакти</a>
+                  <div class="box">
+                    <div class="overlay"></div>
+                  </div></li>
               </ul>
 
           </nav>
 
             <ul class="contact-list">
-              <li class="contacts-list-item"><a href="tel:+38 096 111 11 11" class="contact-list-link"> <svg class="contact-list-svg" width="16" height="12"><use href="./symbol-defs.svg#icon-e-mail"></use></svg> +38 096 111 11 11</a></li>
-              <li class="contacts-list-item"><a href="mailto:info@devstudio.com" class="contact-list-link"> <svg class="contact-list-svg" width="16" height="12"><use href="./symbol-defs.svg#icon-call"></use></svg>info@devstudio.com</a></li>
+              <li class="contacts-list-item"><a href="+38 096 111 11 11" class="contact-list-link"> <svg class="contact-list-svg" width="16" height="12"><use href="./symbol-defs.svg#icon-e-mail"></use></svg> +38 096 111 11 11</a></li>
+              <li class="contacts-list-item"><a href="tel:+38 096 111 11 11" class="contact-list-link"> <svg class="contact-list-svg" width="16" height="12"><use href="./symbol-defs.svg#icon-call"></use></svg>info@devstudio.com</a></li>
             </ul>
           </div>
         </div>
@@ -45,7 +55,9 @@
         <section class="section-hero">
             <div class="container">
               <h1 class="hero-title" >Ефективні рішення для вашого бізнесу</h1>
-              <button class="hero-btn">Замовити послугу</button>
+              <button class="hero-btn" data-modal-open>Замовити послугу</button>
+              
+              
             </div>
         </section>
         <section class="section-features">
@@ -179,16 +191,17 @@
       </div>
 
       <div>
-        <h2 class="footer-form-title">Підпишіться на розсилку</h2>
+        <p class="footer-form-title">Підпишіться на розсилку</p>
         <form action="" class="footer-form">
           <input type="email" placeholder="E-mail" class="footer-comercial-input">
           <button class="footer-form-button">
             Підписатися
-          <svg><use href="./symbol-defs.svg#icon-telegram" width="24" height="24"></use></svg>
+          <svg  width="24" height="24"><use href="./symbol-defs.svg#icon-telegram"></use></svg>
           </button>
         </form>
       </div>
     </div>
+  </div>
       </footer>
     
   </body>
